@@ -1,0 +1,62 @@
+/*Viene del curso Layouts Responsivos / Trabajando con layouts mobile / Cuarta clase./ Semantica HTML./ 2da Actividad./ Preparando el ambiente./*/
+
+.diferenciales {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.diferenciales__lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.diferenciales__item {
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 2rem 0 2rem 5rem;
+  background-repeat: no-repeat;
+  background-position: top 1.25rem left 2.5rem;
+}
+
+.item__titulo {
+  color: var(--fuente-ceniza-oscuro);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.item__texto {
+  line-height: normal;
+}
+
+/*utilizar un modificador en nuestro archivo CSS.*/
+/*vamos a crear una clase para una imagen, por ejemplo, el primer tiempo es del es un icono de reloj y vamos a hacer esa exportación con background-image.*/
+
+.diferenciales__item-developer{
+  background-image: url(../iconos/desarrollo-web.png);
+}
+
+.diferenciales__item-reloj {
+  background-image: url(../iconos/velocidad.png);
+}
+
+.diferenciales__item-dinero {
+  background-image: url(../iconos/servicio-de-calidad.png);
+}
+
+.diferenciales__item-quimica {
+  background-image: url(../iconos/profesionales.png);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .diferenciales {
+      background-color: var(--cinza-claro);
+  }
+  .diferenciales__lista {
+      justify-content: space-around;
+  }
+}

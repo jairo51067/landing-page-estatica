@@ -1,0 +1,64 @@
+/*Podemos hacer de una manera que es utilizar un nuevo recurso del CSS que es crear variables*/
+
+/*O sea, todos esos valores como variables.*/
+
+/*¿cómo se utiliza esa sintaxis? ¿cómo funciona?*/
+
+/* --nombre de la variable: el valor de esa variable;*/
+
+:root {
+  /* --variable: valor;*/
+  --background-llamada-mobile: #000000;
+  --background-blanco: #ffffff;
+  --background-azul-claro: #dfe3f5;
+  --background-ceniza-claro: #f7f4f4;
+  --background-ceniza-medio: #d9d9d9;
+
+  --border-cabecera-mobile: #103d4a;
+
+  --boton-rojo: #b72e2e;
+  --boton-amarillo: yellow;
+
+  --fuente-ceniza-claro: #666666;
+  --fuente-ceniza-oscuro: #4f4c4c;
+
+  --planes-card-start: #035a76;
+  --planes-card-ultra: #690f8e;
+  --planes-card-mega: #b00024;
+
+  --fuente-enlace: #0006ff;
+
+  /* --background-footer: #333333; */
+  --background-footer: #000000;
+
+  --montserrat: 'Montserrat', sans-serif;
+  --open-sans: 'Opens sans', sans-serif;
+}
+body {
+  font-family: var(--open-sans);
+}
+
+.container {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.boton {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 2rem 2rem 2rem;
+  border: 1px solid var(--boton-amarillo);
+  border-radius: 5px;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+      padding-left: calc((100% - 940px)/2);
+      padding-right: calc((100% - 940px)/2);
+  }
+}   
+
